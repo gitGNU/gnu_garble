@@ -1,0 +1,53 @@
+The following is the TODO list for GARBLE as of 2011-01-05:
+
+o [atomx] Move GARBLE from monotone to git
+   This move is for purely pragmatic reasons.  I have full confidence
+   in the abilities of monotone as a version control system, but I
+   wish to take full advantage of the facilities available at
+   savannah.nongnu.org, and the most palatable (and current!) version
+   control system they have integrated is git.
+   
+   Note that I would use GNU Arch if given the choice, but seeing as
+   it has seen no development for several years and is not much used,
+   this is impractical.
+
+   I also understand that Bzr is an ``official'' GNU package, however
+   it has never worked for me, I see it as directly responsible for
+   the abandonment of GNU Arch, and I feel that it became a GNU
+   package, not due to its merits, but because pressure was put on the
+   GNU project by Canonical to have it accepted.  (This is just
+   conjecture, mind you.  It seems strange to me that RMS would be
+   eager to welcome Bzr when he has expressed his distaste for Python
+   in preference of Guile scheme, and Bzr is coded mostly (if not
+   completely) in Python.)
+
+o [atomx] Set up a unit-testing framework for GARBLE
+   This is important.  GARBLE is a unit-by-unit binding to the Guile
+   API, and in order for it to be usable and successful, it must work
+   entirely, and as expected.
+
+   We will be using AUnit for this, since the testing is coming from
+   the Ada-end (we are binding C API using Ada packages).  If there is
+   a costruct that cannot be properly unit-tested (for instance
+   Guile.Init.With_Guile.Boot exits itself, killing the calling
+   process with it), some reasonably satisfying test outside of the
+   AUnit framework should be devised to ensure all is running
+   properly.
+
+o [atomx] Design a homepage for GARBLE
+   This is to be hosted on Savvanah <http://www.nongnu.org/garble>,
+   and should be a site unto itself.  The plan is to write it in SXML,
+   and compile to XHTML upon CVS commit.  (Would prefer to write it
+   all in SXML and have it translated on the fly, but I don't know if
+   we can call Guile as a CGI process on the Savannah servers, or if
+   there's any way to load the modules we'd need for this.) 
+
+- Design a logo for GARBLE
+   Somethings simple, but Scheme-ish.  Any way to make it Ada-ish at
+   the same time?  Hacker-friendly, not stodgy.
+
+o [atomx] Bind the rest of Guile
+   This really goes without saying...
+
+
+

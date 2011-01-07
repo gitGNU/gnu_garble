@@ -1,0 +1,13 @@
+----------------------------------------------------------------------
+--                           G A R B L E                            --
+--                                                                  --
+--                              README                              --
+--                                                                  --
+--    GARBLE : the Guile/Ada Rich Binding for Language Extension    --
+--    An Ada 2005 binding to the Guile Scheme extension library     --
+--                                                                  --
+--                     Copyright © 2010 Atom X                      --
+----------------------------------------------------------------------
+
+***FIXME : Atom X
+***This file should really contain some meaningful information

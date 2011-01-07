@@ -1,0 +1,85 @@
+
+src/guile.adb,106
+package body Guile Guile/b29,1919
+   function Pack Pack/f44,2693
+   function Unpack Unpack/f50,2829
+
+src/guile.ads,255
+package Guile Guile/s49,2613
+   type SCM SCM/t53,2656
+   type SCM_Bits SCM_Bits/t60,3026
+   function Pack Pack/f66,3256
+   function Unpack Unpack/f69,3363
+   package S S/s75,3524
+   type SCM_Bits SCM_Bits/t90,4252
+   type SCM SCM/t91,4312
+
+src/guile-booleans.adb,248
+package body Guile.Booleans Guile.Booleans/b31,1939
+   package C C/s33,1971
+   function To_Scheme To_Scheme/f37,2027
+      function Internal Internal/f39,2078
+   function To_Ada To_Ada/f50,2310
+      function Internal Internal/f52,2358
+
+src/guile-booleans.ads,137
+private package Guile.Booleans Guile.Booleans/s34,2110
+   function To_Scheme To_Scheme/f37,2207
+   function To_Ada To_Ada/f40,2318
+
+src/guile-init.adb,153
+package body Guile.Init Guile.Init/b29,1739
+   package C C/s31,1767
+   procedure Shell Shell/p40,1993
+      procedure Internal Internal/p42,2016
+
+src/guile-init.ads,325
+package Guile.Init Guile.Init/s25,1635
+      type Data_Type Data_Type/t28,1669
+      type Return_Type Return_Type/t29,1699
+   package With_Guile With_Guile/s30,1731
+      type Caller_Func Caller_Func/t32,1757
+      function Call Call/f36,1889
+   procedure Init;Init/p42,2059
+   procedure Shell;Shell/p43,2078
+
+src/guile-numbers.adb,165
+package body Guile.Numbers Guile.Numbers/b31,1939
+   package C C/s33,1970
+   function Is_Number Is_Number/f35,2006
+      function Internal Internal/f39,2082
+
+src/guile-numbers.ads,90
+package Guile.Numbers Guile.Numbers/s43,2450
+   function Is_Number Is_Number/f47,2509
+
+src/guile-numbers-integers.adb,716
+package body Guile.Numbers.Integers Guile.Numbers.Integers/b31,1962
+   package body Convert_Signed Convert_Signed/b34,2003
+      function To_Ada To_Ada/f36,2038
+         function Internal Internal/f38,2087
+      function To_Scheme To_Scheme/f47,2382
+         function Internal Internal/f49,2432
+   function To_Ada To_Ada/f78,3594
+      function Internal Internal/f80,3656
+   function To_Ada To_Ada/f87,3826
+      function Internal Internal/f89,3882
+   function To_Ada To_Ada/f96,4046
+      function Internal Internal/f98,4096
+   function To_Ada To_Ada/f105,4252
+      function Internal Internal/f107,4307
+   function To_Ada To_Ada/f114,4469
+      function Internal Internal/f116,4529
+
+src/guile-numbers-integers.ads,463
+package Guile.Numbers.Integers Guile.Numbers.Integers/s59,2767
+   function Is_Integer Is_Integer/f61,2802
+      type Int Int/t65,2919
+   package Convert_Signed Convert_Signed/s66,2947
+      function To_Ada To_Ada/f70,3078
+      function To_Scheme To_Scheme/f73,3167
+   function To_Ada To_Ada/f82,3515
+   function To_Ada To_Ada/f83,3574
+   function To_Ada To_Ada/f84,3627
+   function To_Ada To_Ada/f85,3674
+   function To_Ada To_Ada/f86,3726

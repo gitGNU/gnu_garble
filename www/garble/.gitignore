@@ -1,0 +1,4 @@
+# -*- mode:conf -*-
+# We don't want to track the CVS archive.  That information is
+# maintained strictly for the benefit of Savannah's site hosting
+CVS/
