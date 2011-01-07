@@ -64,11 +64,13 @@ package body Guile.Booleans is
    --  With that, we can now re-implement this entire string of
    --  indirections in Ada, in a clean, readable way.
 
+   SCM_True : constant SCM :=
+     Pack (SCM_Bits (Shift_Left (4, 8) + Unsigned_64'(4)));
+
+   SCM_False : constant SCM :=
+     Pack (SCM_Bits (Shift_Left (0, 8) + Unsigned_64'(4)));
+
    function To_Scheme (B : Boolean) return SCM is
-      SCM_True  : constant SCM :=
-        Pack (SCM_Bits (Shift_Left (4, 8) + Unsigned_64'(4)));
-      SCM_False : constant SCM :=
-        Pack (SCM_Bits (Shift_Left (0, 8) + Unsigned_64'(4)));
    begin
       if B then
          return SCM_True;
